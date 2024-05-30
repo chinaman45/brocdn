@@ -18,7 +18,7 @@ DOMAINS = json.loads(os.environ["DOMAINS"])  #{"hostmonit.com": {"@": ["CM","CU"
 #腾讯云后台获取 https://console.cloud.tencent.com/cam/capi
 SECRETID = os.environ["SECRETID"]    #'AKIDV**********Hfo8CzfjgN'
 SECRETKEY = os.environ["SECRETKEY"]   #'ZrVs*************gqjOp1zVl'
-#默认为普通版本 不用修改
+#解析生效条数 免费的DNSPod相同线路最多支持2条解析
 AFFECT_NUM = 2
 #DNS服务商 如果使用DNSPod改为1 如果使用阿里云解析改成2  如果使用华为云解析改成3
 DNS_SERVER = 1
